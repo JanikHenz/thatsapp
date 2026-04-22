@@ -1,0 +1,79 @@
+== Emoba Assignment 2 - ThatsApp
+
+=== Bearbeitet von
+
+* _Janik Henz_
+
+=== Kompatibel mit der App von
+
+* _Eric Brukner_, _repository-link_
+* _Merlin Van der Kolk_, _repository-link_
+
+=== Herausstellungsmerkmal meiner App
+
+* _Beschreibung der einen, besonderen Eigenschaft der App_
+
+
+=== Getting Started (Enduser Anleitung)
+
+_Kurze Beschreibung welche initialen Schritte notwendig sind, um eine Nachricht an einen Chat-Teilnehmer, der dieselbe App verwendet, verschicken zu können._
+
+=== Abgabe
+
+* Klasse 5iCa, Montag, 9.12.2024,  8:00 Uhr - Dieter Holz
+* Klasse 5iCb, Montag, 9.12.2024, 12:00 Uhr - Michael Job
+
+Die Abgabe erfolgt durch ein "Push" auf den Main-Branch Ihres GitHub-Repositories.
+
+
+=== Die Aufgabe: Chat-Applikation
+
+Entwerfen und implementieren Sie eine Chat-Applikation als native Android App mit Kotlin und Jetpack Compose.
+
+Die im Unterricht gezeigte App 'ThatsApp' ist nur eine mögliche Umsetzung des gewünschten Funktionsumfangs. Sie können dieses UI übernehmen oder aber einen eigenen Entwurf umsetzen.
+
+Anforderungen:
+
+* Legen Sie das wichtigste Herausstellungsmerkmal Ihrer App fest und beschreiben Sie es im obigen Abschnitt
+** Beispiele: minimale Datenspeicherung auf dem Server; gesamte Chat-Historie wird abgespeichert; besonders einfache Bedienbarkeit, End-To-End-Verschlüsselung, etc.
+* Getting-Started-Abschnitt ist ausgefüllt
+* Gewünschte Funktionalität
+** Profile-Screen mit dem eigenen "Namen" und einem Avatar-Bild.
+** Übersicht über alle Personen, mit denen gechattet werden kann.
+** Verschicken von Text-Nachrichten an einen anderen Chat-Teilnehmer (also nur an diese eine Person).
+** Verschicken eines, mit der Kamera des Android-Devices aktuell aufgenommenen, Bildes an den Chat-Teilnehmer.
+** Verschicken der aktuellen GPS-Position an den Chat-Teilnehmer.
+** Empfangen dieser drei Nachrichtentypen.
+* Verwendung von MQTT zur Nachrichten-Verteilung
+* Versuchen Sie sich mit möglichst vielen anderen auf ein einheitliches JSON-Format zum Austausch von Nachrichten zu einigen.
+** Idealerweise können, neben der eigenen App, auch unterschiedliche Apps zum Chatten verwendet werden.
+* Das UI ist komplett mit Jetpack Compose zu implementieren.
+** https://developer.android.com/jetpack/compose
+* Implementierungssprache für die gesamte Applikation ist Kotlin.
+* Die im Unterricht erarbeitete Grundstruktur einer Android-App ist anzuwenden. Strukturierung der App in 3 Layer.
+* UI Code ist klar strukturiert in unabhängige Screens und via Composable Functions.
+
+
+=== Bewertung
+
+Es können in diesem Assignment maximal 4 Punkte erreicht werden. Der Fokus liegt dabei, neben Umsetzung der gewünschten Funktionalität, auf der Code-Qualität. Der Coolness-Faktor des UI wird über den Coolest App Award berücksichtigt.
+
+* 4 Punkte
+** Umsetzung der gesamten gewünschten Funktionalität und der oben genannten Grundanforderungen, insbesondere:
+** App stimmt mit dem genannten Herausstellungsmerkmal überein
+** Code Struktur (3 Layer), Qualität (clean code)
+** Chat mit mindestens einer weiteren App ist möglich
+* 1 Punkt
+** Text-Nachrichten zwischen zwei Teilnehmern, die beide diesselbe App verwenden, können ausgetauscht werden. Die gesendeten/empfangenen Nachrichten der beiden Teilnehmer werden angezeigt. Der Avatar und der Name des Chat-Teilnehmers wird angezeigt (Hinweis: Avatar und Name müssen dafür einstellbar sein).
+* 0 Punkte
+** falls die Kriterien für einen Punkt nicht erfüllt sind
+** falls MQTT nicht zum Nachrichtenaustausch verwendet wird
+** falls das Projekt nicht kompilierfähig ist
+** falls die App abstürzt bevor der erste Screen angezeigt wird
+** falls ihr Name nicht unter 'bearbeitet von' eingetragen ist
+** für Plagiate
+
+=== Hinweis
+Für die Bewertung wird Ihre App zunächst auf zwei Devices gestartet (typischerweise einmal im Emulator und einmal auf einem "echten" Android-Phone) und untersucht, ob in diesem Setup (und mit unterschiedlichen Benutzer-Namen) gechattet werden kann.
+
+Erst danach wird untersucht ob eine der angegebenen kompatiblen Applikationen ebenfalls eingesetzt werden kann.
